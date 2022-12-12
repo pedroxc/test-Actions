@@ -1,6 +1,6 @@
 on:
-push:
-branches: -main
+  push:
+    branches: -main
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -13,6 +13,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ftp.sistemablu.com.br
-          username: pedro@bluvalida.com.br
-          password: Yume622045.
+          server: ${{secretes.ftp_host}}
+          username: ${{secretes.ftp_user}}
+          password: ${[secretes.ftp_password]}
+          server-dir: /home1/sist2859/bluvalida.com.br
