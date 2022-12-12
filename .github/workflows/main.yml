@@ -11,6 +11,6 @@ jobs:
       - name: Upload from public_html via FTP
         uses: airvzxf/ftp-deployment-action@latest
         with:
-          server: ${{ secrets.host }}
-          user: ${{ secrets.user }}
-          password: ${{ secrets.password }}
+          server: ftp.sistemablu.com.br
+          user: pedro@bluvalida.com.br
+          password: Yume622045.
