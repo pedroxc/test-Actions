@@ -16,4 +16,3 @@ jobs:
           server: ${{secretes.ftp_host}}
           username: ${{secretes.ftp_user}}
           password: ${[secretes.ftp_password]}
-          server-dir: /home1/sist2859/bluvalida.com.br
