@@ -13,6 +13,6 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ftp.sistemablu.com.br
-          username: pedro@bluvalida.com.br
-          password: Yume622045.
+          server: ${{ secrets.host }}
+        username: ${{ secrets.password }}
+        password: ${{ secrets.password }}
