@@ -14,3 +14,4 @@ jobs:
           server: ${{ secrets.host }}
           user: ${{ secrets.user }}
           password: ${{ secrets.password }}
+          local-dir: test/
